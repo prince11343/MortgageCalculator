@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">房贷计算器</string>
+    <!-- 学生信息：计算机241班 2406100109 葛昭阳 -->
+    <string name="student_info">计算机241班  学号：2406100109  姓名：葛昭阳</string>
+
+    <string-array name="loan_terms">
+        <item>10 年</item>
+        <item>15 年</item>
+        <item>20 年</item>
+        <item>25 年</item>
+        <item>30 年</item>
+    </string-array>
+</resources>
