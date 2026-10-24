@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 学生信息：硬编码，运行时不可编辑（作业要求 2） -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/student_info"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="#1976D2"
+        android:padding="12dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 汇总卡片 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvSummaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="计算结果"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvMonthlyPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#E65100"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvTotalInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/tvTotalPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/tvMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#888"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- 还款明细标题 -->
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="前 12 期还款明细"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="8dp" />
+
+    <!-- ListView 展示每期明细 -->
+    <ListView
+        android:id="@+id/lvSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#EEEEEE"
+        android:dividerHeight="1dp" />
+
+    <!-- 返回按钮 -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回重新计算"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
